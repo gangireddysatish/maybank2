@@ -1,0 +1,87 @@
+Running auto-py-to-exe v2.46.0
+Building directory: C:\Users\GANGIKUM\AppData\Local\Temp\tmp6pyem4vd
+Provided command: pyinstaller --noconfirm --onefile --console  "C:\Users\GANGIKUM\Desktop\maybank\cdh_connection_withlogs.py"
+Recursion Limit is set to 5000
+Executing: pyinstaller --noconfirm --onefile --console C:\Users\GANGIKUM\Desktop\maybank\cdh_connection_withlogs.py --distpath C:\Users\GANGIKUM\AppData\Local\Temp\tmp6pyem4vd\application --workpath C:\Users\GANGIKUM\AppData\Local\Temp\tmp6pyem4vd\build --specpath C:\Users\GANGIKUM\AppData\Local\Temp\tmp6pyem4vd
+
+30118 INFO: PyInstaller: 6.15.0, contrib hooks: 2025.8
+30125 INFO: Python: 3.9.13
+30355 INFO: Platform: Windows-10-10.0.26100-SP0
+30363 INFO: Python environment: C:\Users\GANGIKUM\Desktop\maybank\hiveenv
+30372 INFO: wrote C:\Users\GANGIKUM\AppData\Local\Temp\tmp6pyem4vd\cdh_connection_withlogs.spec
+30396 INFO: Module search paths (PYTHONPATH):
+['C:\\Users\\GANGIKUM\\Desktop\\maybank\\hiveenv\\scripts\\auto-py-to-exe.exe',
+ 'C:\\Program Files\\Python39\\python39.zip',
+ 'C:\\Program Files\\Python39\\DLLs',
+ 'C:\\Program Files\\Python39\\lib',
+ 'C:\\Program Files\\Python39',
+ 'C:\\Users\\GANGIKUM\\Desktop\\maybank\\hiveenv',
+ 'C:\\Users\\GANGIKUM\\Desktop\\maybank\\hiveenv\\lib\\site-packages',
+ 'C:\\Users\\GANGIKUM\\Desktop\\maybank\\hiveenv\\lib\\site-packages\\setuptools\\_vendor',
+ 'C:\\Users\\GANGIKUM\\Desktop\\maybank']
+32647 INFO: checking Analysis
+32651 INFO: Building Analysis because Analysis-00.toc is non existent
+32670 INFO: Running Analysis Analysis-00.toc
+32686 INFO: Target bytecode optimization level: 0
+32702 INFO: Initializing module dependency graph...
+32724 INFO: Initializing module graph hook caches...
+32812 INFO: Analyzing modules for base_library.zip ...
+36488 INFO: Processing standard module hook 'hook-encodings.py' from 'C:\\Users\\GANGIKUM\\Desktop\\maybank\\hiveenv\\lib\\site-packages\\PyInstaller\\hooks'
+41258 INFO: Processing standard module hook 'hook-pickle.py' from 'C:\\Users\\GANGIKUM\\Desktop\\maybank\\hiveenv\\lib\\site-packages\\PyInstaller\\hooks'
+43155 INFO: Processing standard module hook 'hook-heapq.py' from 'C:\\Users\\GANGIKUM\\Desktop\\maybank\\hiveenv\\lib\\site-packages\\PyInstaller\\hooks'
+44441 INFO: Caching module dependency graph...
+44574 INFO: Looking for Python shared library...
+44626 INFO: Using Python shared library: C:\Program Files\Python39\python39.dll
+44629 INFO: Analyzing C:\Users\GANGIKUM\Desktop\maybank\cdh_connection_withlogs.py
+44663 INFO: Processing standard module hook 'hook-jpype.py' from 'C:\\Users\\GANGIKUM\\Desktop\\maybank\\hiveenv\\lib\\site-packages\\jpype\\_pyinstaller'
+45309 INFO: Processing standard module hook 'hook-platform.py' from 'C:\\Users\\GANGIKUM\\Desktop\\maybank\\hiveenv\\lib\\site-packages\\PyInstaller\\hooks'
+45328 INFO: Processing pre-safe-import-module hook 'hook-packaging.py' from 'C:\\Users\\GANGIKUM\\Desktop\\maybank\\hiveenv\\lib\\site-packages\\PyInstaller\\hooks\\pre_safe_import_module'
+45340 INFO: SetuptoolsInfo: initializing cached setuptools info...
+57187 INFO: Processing pre-safe-import-module hook 'hook-typing_extensions.py' from 'C:\\Users\\GANGIKUM\\Desktop\\maybank\\hiveenv\\lib\\site-packages\\PyInstaller\\hooks\\pre_safe_import_module'
+57840 INFO: Processing standard module hook 'hook-multiprocessing.util.py' from 'C:\\Users\\GANGIKUM\\Desktop\\maybank\\hiveenv\\lib\\site-packages\\PyInstaller\\hooks'
+58198 INFO: Processing standard module hook 'hook-xml.py' from 'C:\\Users\\GANGIKUM\\Desktop\\maybank\\hiveenv\\lib\\site-packages\\PyInstaller\\hooks'
+58804 INFO: Processing standard module hook 'hook-_ctypes.py' from 'C:\\Users\\GANGIKUM\\Desktop\\maybank\\hiveenv\\lib\\site-packages\\PyInstaller\\hooks'
+60075 INFO: Processing module hooks (post-graph stage)...
+60644 INFO: Performing binary vs. data reclassification (2 entries)
+60656 INFO: Looking for ctypes DLLs
+60684 INFO: Analyzing run-time hooks ...
+60694 INFO: Including run-time hook 'pyi_rth_pkgutil.py' from 'C:\\Users\\GANGIKUM\\Desktop\\maybank\\hiveenv\\lib\\site-packages\\PyInstaller\\hooks\\rthooks'
+60714 INFO: Including run-time hook 'pyi_rth_inspect.py' from 'C:\\Users\\GANGIKUM\\Desktop\\maybank\\hiveenv\\lib\\site-packages\\PyInstaller\\hooks\\rthooks'
+60728 INFO: Including run-time hook 'pyi_rth_multiprocessing.py' from 'C:\\Users\\GANGIKUM\\Desktop\\maybank\\hiveenv\\lib\\site-packages\\PyInstaller\\hooks\\rthooks'
+60756 INFO: Creating base_library.zip...
+61060 INFO: Looking for dynamic libraries
+An error occurred while packaging
+Traceback (most recent call last):
+  File "C:\Users\GANGIKUM\Desktop\maybank\hiveenv\lib\site-packages\PyInstaller\building\build_main.py", line 287, in find_binary_dependencies
+    child.call(import_library, package)
+  File "C:\Users\GANGIKUM\Desktop\maybank\hiveenv\lib\site-packages\PyInstaller\isolated\_parent.py", line 322, in call
+    raise SubprocessDiedError(
+PyInstaller.isolated._parent.SubprocessDiedError: Child process died calling import_library() with args=('jpype',) and kwargs={}. Its exit code was 3221225477.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\GANGIKUM\Desktop\maybank\hiveenv\lib\site-packages\auto_py_to_exe\packaging.py", line 132, in package
+    run_pyinstaller(pyinstaller_args[1:])
+  File "C:\Users\GANGIKUM\Desktop\maybank\hiveenv\lib\site-packages\PyInstaller\__main__.py", line 215, in run
+    run_build(pyi_config, spec_file, **vars(args))
+  File "C:\Users\GANGIKUM\Desktop\maybank\hiveenv\lib\site-packages\PyInstaller\__main__.py", line 70, in run_build
+    PyInstaller.building.build_main.main(pyi_config, spec_file, **kwargs)
+  File "C:\Users\GANGIKUM\Desktop\maybank\hiveenv\lib\site-packages\PyInstaller\building\build_main.py", line 1282, in main
+    build(specfile, distpath, workpath, clean_build)
+  File "C:\Users\GANGIKUM\Desktop\maybank\hiveenv\lib\site-packages\PyInstaller\building\build_main.py", line 1220, in build
+    exec(code, spec_namespace)
+  File "C:\Users\GANGIKUM\AppData\Local\Temp\tmp6pyem4vd\cdh_connection_withlogs.spec", line 4, in <module>
+    a = Analysis(
+  File "C:\Users\GANGIKUM\Desktop\maybank\hiveenv\lib\site-packages\PyInstaller\building\build_main.py", line 584, in __init__
+    self.__postinit__()
+  File "C:\Users\GANGIKUM\Desktop\maybank\hiveenv\lib\site-packages\PyInstaller\building\datastruct.py", line 184, in __postinit__
+    self.assemble()
+  File "C:\Users\GANGIKUM\Desktop\maybank\hiveenv\lib\site-packages\PyInstaller\building\build_main.py", line 977, in assemble
+    find_binary_dependencies(self.binaries, collected_packages, self.graph._bindepend_symlink_suppression)
+  File "C:\Users\GANGIKUM\Desktop\maybank\hiveenv\lib\site-packages\PyInstaller\building\build_main.py", line 291, in find_binary_dependencies
+    raise isolated.SubprocessDiedError(
+PyInstaller.isolated._parent.SubprocessDiedError: Isolated subprocess crashed while importing package 'jpype'! Package import list: ['importlib', 'urllib', 'email', 'logging', 'xmlrpc', 'xml.parsers', 'xml', 'http', 'xml.sax', 'ctypes', 'multiprocessing.dummy', 'multiprocessing', 'collections', 'encodings', 'gssapi', 'gssapi.raw', 'gssapi.raw._enum_extensions', 'jaydebeapi', 'jpype', 'asyncio', 'concurrent.futures', 'concurrent', 'packaging']
+
+Project output will not be moved to output folder
+Complete.
