@@ -1,5 +1,5 @@
 import os
-import jpype1 as jpype
+import jpype
 import jaydebeapi
 import gssapi
 import traceback
